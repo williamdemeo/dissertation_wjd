@@ -1,0 +1,15 @@
+
+        \node (bottom) at (0,0)  [draw, circle, inner sep=\dotsize] {};
+        \node (top) at (0,5)  [draw, circle, inner sep=\dotsize] {};
+        \node (n115) at (-1,1.5)  [draw, circle, inner sep=\dotsize] {};
+        \node (015) at (0,1.5)  [draw, circle, inner sep=\dotsize] {};
+        \node (115) at (1,1.5)  [draw, circle, inner sep=\dotsize] {};
+        \node (n252) at (-2.5,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (03) at (0,3)  [draw, circle, inner sep=\dotsize] {};
+        \draw[semithick] 
+        (bottom) to (n252) to (top)
+        (bottom) to (n115) to (03) to (115) to
+        (bottom) to (015) to (03) to (top);
+       %\draw (-4.5,2.2) node {$L \cong$};
+
+

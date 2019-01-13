@@ -1,0 +1,20 @@
+%\newcommand{\dotsize}{1};
+\node (0) at (0,0) [draw, circle,inner sep=\dotsize] {};
+\node (1) at (-0,1) [draw, circle, inner sep=\dotsize] {};
+\node (2) at (1,2) [draw, circle, inner sep=\dotsize] {};
+\node (3) at (-1,2) [draw, circle, inner sep=\dotsize] {};
+\node (4) at (-0,2) [draw, circle, inner sep=\dotsize] {};
+\node (5) at (-0,3) [draw, circle, inner sep=\dotsize] {};
+\node (6) at (-0,4) [draw, circle, inner sep=\dotsize] {};
+%\draw[font=\scriptsize] (0,-.5) node {[A4, (C2 x C2 x C2 x C2) : A5]};
+%\draw[font=\scriptsize] (0,-1) node {SmallGroup(960,11358) Index 80};
+
+\draw[semithick]
+(0) to (1)
+(0) to (2)
+(0) to (3)
+(1) to (4)
+(2) to (6)
+(3) to (6)
+(4) to (5)
+(5) to (6);

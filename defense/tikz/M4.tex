@@ -1,0 +1,7 @@
+        \node (250) at (2.5,0)  [draw, circle, inner sep=\dotsize] {};
+        \node (253) at (2.5,3)  [draw, circle, inner sep=\dotsize] {};
+        \foreach \i in {1,...,4} 
+                 { 
+                   \node (\i15) at (\i,1.5)  [draw, circle, inner sep=\dotsize] {};
+                   \draw[semithick] (250) to (\i15) to (253);
+                 }

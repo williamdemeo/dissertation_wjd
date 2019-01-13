@@ -1,0 +1,8 @@
+% L20
+      \foreach \j in {0,...,4}
+      {
+        \node (0\j) at (0,\j)  [draw, circle, inner sep=\dotsize] {};
+      }
+      \node (152) at (1.5,2)  [draw, circle, inner sep=\dotsize] {};
+      \node (n125) at (-1,2.5)  [draw, circle, inner sep=\dotsize] {};
+      \draw[semithick] (01) to (02) to (03) to (04) to (n125) to (01) to (00) to (152) to (04);

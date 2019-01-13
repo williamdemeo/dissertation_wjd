@@ -1,0 +1,9 @@
+*.bbl
+*~
+*.ind
+*.aux
+*.log
+*.out
+ARCHIVE
+misc
+lit

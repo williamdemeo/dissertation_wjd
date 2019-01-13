@@ -1,0 +1,11 @@
+%% ``L9'' is the pentegon with two extra wings.
+      \foreach \j in {0,3} 
+      { \node (7\j) at (6.5,\j)  [draw, circle, inner sep=\dotsize] {};}
+      \node (71) at (7,1.5)  [draw, circle, inner sep=\dotsize] {};
+      \node (61) at (6,1.5)  [draw, circle, inner sep=\dotsize] {};
+      \node (51) at (5,1.5)  [draw, circle, inner sep=\dotsize] {};
+      \foreach \j in {1,2} 
+      { \node (8\j) at (7.8,\j)  [draw, circle, inner sep=\dotsize] {};}
+      \draw[semithick] (70) to (51) to (73) to (61) to (70) to (71) to (73) to
+      (82) to (81) to (70);
+      

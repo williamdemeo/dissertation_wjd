@@ -1,0 +1,11 @@
+% L11 aka L3 
+        \node (bottom) at (0,0)  [draw, circle, inner sep=\dotsize] {};
+        \node (top) at (2,6)  [draw, circle, inner sep=\dotsize] {};
+        \node (n22) at (-2,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (22) at (2,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (13) at (1,3)  [draw, circle, inner sep=\dotsize] {};
+        \node (04) at (0,4)  [draw, circle, inner sep=\dotsize] {};
+        \node (44) at (4,4)  [draw, circle, inner sep=\dotsize] {};
+
+        \draw[semithick] (bottom) to (22) to (44) to (top) to (04) to (13) to (22)
+        (bottom) to (n22) to (04);

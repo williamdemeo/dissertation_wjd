@@ -1,0 +1,11 @@
+    \node (H) at (4,4) [fill,circle,inner sep=\dotsize] {}; \draw (H) node [right] {$H$};
+    \node (U) at (-4,4) [fill,circle,inner sep=\dotsize] {}; \draw (U) node [left] {$U$};
+    \node (U0) at (0,0) [fill,circle,inner sep=\dotsize] {}; 
+    \draw (1.5,-.75) node {$U_0 = U\cap H$};
+    \node (UH) at (0,8) [fill,circle,inner sep=\dotsize] {}; \draw (UH) node
+    [above] {$UH$};
+ \draw
+    (U) to [out=-10,in=100] (U0) to [out=170,in=-80] (U)
+    (UH) to [out=-10,in=100] (H) to [out=170,in=-80] (UH)
+    (H) to [out=190,in=80] (U0) to [out=10,in=-100] (H)
+    (UH) to [out=190,in=80] (U) to [out=10,in=-100] (UH);

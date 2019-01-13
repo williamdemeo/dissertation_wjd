@@ -1,0 +1,15 @@
+        \node (bottom) at (0,0)  [draw, circle, inner sep=\dotsize] {};
+        \node (top) at (0,5)  [draw, circle, inner sep=\dotsize] {};
+        \node (n115) at (-1,1.5)  [draw, circle, inner sep=\dotsize] {};
+        \node (015) at (0,1.5)  [draw, circle, inner sep=\dotsize] {};
+        \node (115) at (1,1.5)  [draw, circle, inner sep=\dotsize] {};
+        \node (n252) at (-2.5,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (252) at (2.5,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (n42) at (-4,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (42) at (4,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (03) at (0,3)  [draw, circle, inner sep=\dotsize] {};
+        \draw[semithick] 
+        (bottom) to (42) to (top) to (n42) to 
+        (bottom) to (n252) to (top) to (252) to 
+        (bottom) to (n115) to (03) to (115) to
+        (bottom) to (015) to (03) to (top);

@@ -1,0 +1,12 @@
+% Ordinal sum of 2x2 and 2x2
+        \node (bot) at (0,0)  [draw, circle, inner sep=\dotsize] {};
+        \node (top) at (0,4)  [draw, circle, inner sep=\dotsize] {};
+        \node (11) at (1,1)  [draw, circle, inner sep=\dotsize] {};
+        \node (02) at (0,2)  [draw, circle, inner sep=\dotsize] {};
+        \node (n11) at (-1,1)  [draw, circle, inner sep=\dotsize] {};
+        \node (n13) at (-1,3)  [draw, circle, inner sep=\dotsize] {};
+        \node (13) at (1,3)  [draw, circle, inner sep=\dotsize] {};
+
+        \draw[semithick] 
+        (bot) to (11) to (02) to (n11) to (bot)
+        (02) to (13) to (top) to (n13) to (02);
